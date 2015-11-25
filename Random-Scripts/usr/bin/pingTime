@@ -1,0 +1,31 @@
+#!/usr/bin/python
+
+# This script extracts the RTT for ping attempts to a server, 
+
+import sys
+
+
+def main(pingfile):
+
+    times = []
+
+    # Count number of lines in the file
+    num_lines = sum(1 for line in open(pingfile))
+
+    # Open the file containing ping message statistics to read
+    inputfile = open(pingfile, 'r')
+    linecount = 1
+
+    # Read each line
+    for line in inputfile:
+        if linecount == 1 or linecount > num_lines - 4:
+            linecount += 1
+            continue
+        else:
+            # Extract the time from each line (i.e. ping attempt)
+            times.append(line.split(' ')[6].split('=')[1])
+            linecount += 1
+    print times
+
+if __name__ == "__main__":
+    main(sys.argv[1])
