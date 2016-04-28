@@ -1,0 +1,26 @@
+In order to install MongoDB on Ubuntu 16.04 Xenial. Follow the followwing steps.
+
+Add Key
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+or
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv EA312927
+
+Add Sources List
+echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+
+Update your sources
+sudo apt-get update
+
+Install mongodb-org
+sudo apt-get install mongodb-org
+
+Check if working
+sudo systemctl status mongod
+
+If not working
+sudo reboot
+
+If still not working, run the companion script given in this repo i.e.
+./mongodb_install_script.sh
+
+# Works like a charm
