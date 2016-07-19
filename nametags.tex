@@ -1,6 +1,7 @@
 %%%%
 %
-% ticket.sty example file for a pin for conferences
+% Name tags for HKUST workshop using ticket.sty 
+% by Ibbad Hafeez, Lauri Suomalainen
 %
 %%%%
 % use the corresponding paper size for your ticket definition
@@ -12,9 +13,11 @@
 % load misc stuff
 \usepackage{graphicx}
 
-% make your default ticket. \ticketdefault is somewhat like a background
+% Adjust this size to make sure they fit your sleeve.
 \ticketSize{92}{60}
+% make your default ticket. \ticketdefault is somewhat like a background
 \renewcommand{\ticketdefault}{%
+% \put(x, y) where (0, 0) is bottom left corner
   \put(42,  5){\includegraphics[width=48mm, height=15mm]{tktl}}
   \put( 1, 21){\line(1,0){90}}
   \put( 1, 16){\scriptsize \normalsize Mobile Services and Edge }
