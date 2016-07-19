@@ -1,0 +1,82 @@
+%%%%
+%
+% ticket.sty example file for a pin for conferences
+%
+%%%%
+% use the corresponding paper size for your ticket definition
+\documentclass[a4paper,10pt]{letter}
+
+% load ticket.sty with the appropriate ticket definition
+\usepackage[freepin,crossmark]{ticket}
+
+% load misc stuff
+\usepackage{graphicx}
+
+% make your default ticket. \ticketdefault is somewhat like a background
+\ticketSize{92}{60}
+\renewcommand{\ticketdefault}{%
+  \put(42,  5){\includegraphics[width=48mm, height=15mm]{tktl}}
+  \put( 1, 21){\line(1,0){90}}
+  \put( 1, 16){\scriptsize \normalsize Mobile Services and Edge }
+  \put( 1, 11){\scriptsize \normalsize Computing Workshop '16}
+  \put( 1, 6){\scriptsize \normalsize July 27th-29th, 2016}
+}
+
+% now what do you like to put in your ticket
+\newcommand{\confpin}[2]{\ticket{%
+    \put(45,45){\makebox[0mm]{\bfseries\Large #1}}
+    \put(45,32){\makebox[0mm]{\bfseries\large #2}}
+
+}}
+
+
+%% the pins for the partipiciants ... ;-)
+%% you can generate this part from a database!
+\begin{document}
+\sffamily
+\confpin{\huge Lauri Suomalainen}{\Large University of Helsinki}
+\confpin{Ibbad Hafeez}{University of Helsinki}
+\confpin{Dimitris Chatzopoulos}{HKUST}
+\confpin{Pei Zhang}{BUPT}
+\confpin{Arseny Kurnikov}{Aalto Comnet}
+\confpin{Yu Xiao}{Aalto University}
+\confpin{Kai Wang}{Aalto University}
+\confpin{Tuomas Aura}{Aalto University}
+\confpin{Samuel Marchal}{Aalto University}
+\confpin{Stephan Sigg}{Aalto University}
+\confpin{Saba Ahsan}{Aalto University}
+\confpin{Sourav Bhattacharya}{Nokia Bell Labs}
+\confpin{Alexey Kirichenko}{F-Secure corp.}
+\confpin{Petri Myllym{\"a}ki}{HIIT}
+\confpin{Pan Hui}{HKUST}
+\confpin{Zhen Cao}{Huawei}
+\confpin{Lars Eggert}{NetApp}
+\confpin{Hannu Flinck}{Nokia Bell Labs}
+\confpin{Yao Guo}{Peking University}
+\confpin{Steve Uhlig}{Queen Mary University of London}
+\confpin{Markus Miettinen}{TU Darmstadt}
+\confpin{Weixiong Rao}{Tongji University}
+\confpin{Jiangfeng Li}{Tongji University}
+\confpin{Jing Wang}{Tongji University}
+\confpin{Xichen Wang}{Tsinghua University}
+\confpin{Jingtao Ding}{Tsinghua University}
+\confpin{Zhen Tu}{Tsinghua University}
+\confpin{Fengli Xu}{Tsinghua University}
+\confpin{Yong Li}{Tsinghua University}
+\confpin{Lieguang Zeng}{Tsinghua University}
+\confpin{Depeng Jin}{Tsinghua University}
+\confpin{Aaron Yi Ding}{TU Munich}
+\confpin{Liang Wang}{University of Cambridge}
+\confpin{Eiko Yoneki}{University of Cambridge}
+\confpin{Ashwin Rao}{University of Helsinki}
+\confpin{Sasu Tarkoma}{University of Helsinki}
+\confpin{Eemil Lagerspetz}{University of Helsinki}
+\confpin{Jussi Kangasharju}{University of Helsinki}
+\confpin{Valtteri Niemi}{University of Helsinki}
+\confpin{Markku Kojo}{University of Helsinki}
+\confpin{\Huge Ilpo J{\"a}rvinen}{\Large University of Helsinki}
+\confpin{\Huge Seppo H{\"a}t{\"o}nen}{\Large University of Helsinki}
+\confpin{\Huge Lirim Osmani}{\Large University of Helsinki}
+\confpin{\Huge Juhani Toivonen}{\Large University of Helsinki}
+\confpin{\Huge Huber Flores}{\Large University of Oulu}
+\end{document}
