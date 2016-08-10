@@ -1,7 +1,6 @@
 %%%%
 %
-% Name tags for HKUST workshop using ticket.sty 
-% by Ibbad Hafeez, Lauri Suomalainen
+% ticket.sty example file for a pin for conferences
 %
 %%%%
 % use the corresponding paper size for your ticket definition
@@ -13,11 +12,10 @@
 % load misc stuff
 \usepackage{graphicx}
 
-% Adjust this size to make sure they fit your sleeve.
-\ticketSize{92}{60}
 % make your default ticket. \ticketdefault is somewhat like a background
+\ticketNumbers{1}{4}
+\ticketSize{92}{60}
 \renewcommand{\ticketdefault}{%
-% \put(x, y) where (0, 0) is bottom left corner
   \put(42,  5){\includegraphics[width=48mm, height=15mm]{tktl}}
   \put( 1, 21){\line(1,0){90}}
   \put( 1, 16){\scriptsize \normalsize Mobile Services and Edge }
@@ -37,49 +35,54 @@
 %% you can generate this part from a database!
 \begin{document}
 \sffamily
-\confpin{\huge Lauri Suomalainen}{\Large University of Helsinki}
-\confpin{Ibbad Hafeez}{University of Helsinki}
-\confpin{Dimitris Chatzopoulos}{HKUST}
-\confpin{Pei Zhang}{BUPT}
-\confpin{Arseny Kurnikov}{Aalto Comnet}
-\confpin{Yu Xiao}{Aalto University}
-\confpin{Kai Wang}{Aalto University}
-\confpin{Tuomas Aura}{Aalto University}
-\confpin{Samuel Marchal}{Aalto University}
-\confpin{Stephan Sigg}{Aalto University}
-\confpin{Saba Ahsan}{Aalto University}
-\confpin{Sourav Bhattacharya}{Nokia Bell Labs}
-\confpin{Alexey Kirichenko}{F-Secure corp.}
-\confpin{Petri Myllym{\"a}ki}{HIIT}
-\confpin{Pan Hui}{HKUST}
-\confpin{Zhen Cao}{Huawei}
-\confpin{Lars Eggert}{NetApp}
-\confpin{Hannu Flinck}{Nokia Bell Labs}
-\confpin{Yao Guo}{Peking University}
-\confpin{Steve Uhlig}{Queen Mary University of London}
-\confpin{Markus Miettinen}{TU Darmstadt}
-\confpin{Weixiong Rao}{Tongji University}
-\confpin{Jiangfeng Li}{Tongji University}
-\confpin{Jing Wang}{Tongji University}
-\confpin{Xichen Wang}{Tsinghua University}
-\confpin{Jingtao Ding}{Tsinghua University}
-\confpin{Zhen Tu}{Tsinghua University}
-\confpin{Fengli Xu}{Tsinghua University}
-\confpin{Yong Li}{Tsinghua University}
-\confpin{Lieguang Zeng}{Tsinghua University}
-\confpin{Depeng Jin}{Tsinghua University}
-\confpin{Aaron Yi Ding}{TU Munich}
-\confpin{Liang Wang}{University of Cambridge}
-\confpin{Eiko Yoneki}{University of Cambridge}
-\confpin{Ashwin Rao}{University of Helsinki}
-\confpin{Sasu Tarkoma}{University of Helsinki}
-\confpin{Eemil Lagerspetz}{University of Helsinki}
-\confpin{Jussi Kangasharju}{University of Helsinki}
-\confpin{Valtteri Niemi}{University of Helsinki}
-\confpin{Markku Kojo}{University of Helsinki}
+\iffalse
+\confpin{\Huge Lauri Suomalainen}{\Large University of Helsinki}
+\confpin{\Huge Ibbad Hafeez}{\Large University of Helsinki}
+\confpin{\Huge Dimitris Chatzopoulos}{\Large HKUST}
+\confpin{\Huge Pei Zhang}{\Large BUPT}
+\confpin{\Huge Arseny Kurnikov}{\Large Aalto University}
+\confpin{\Huge Yu Xiao}{\Large Aalto University}
+\confpin{\Huge Suzan Bayhan}{\Large University of Helsinki}
+\confpin{\Huge Tuomas Aura}{\Large Aalto University}
+\confpin{\Huge Samuel Marchal}{\Large Aalto University}
+\confpin{\Huge Stephan Sigg}{\Large Aalto University}
+\confpin{\Huge Saba Ahsan}{\Large Aalto University}
+\confpin{\Huge Sourav Bhattacharya}{\Large Nokia Bell Labs}
+\confpin{\Huge Alexey Kirichenko}{\Large F-Secure corp.}
+\confpin{\Huge Petri Myllym{\"a}ki}{\Large {HIIT}}
+\confpin{\Huge Pan Hui}{\Large HKUST}
+\confpin{\Huge Zhen Cao}{\Large Huawei}
+\confpin{\Huge Lars Eggert}{\Large NetApp}
+\confpin{\Huge Hannu Flinck}{\Large Nokia Bell Labs}
+\confpin{\Huge Yao Guo}{\Large Peking University}
+\confpin{\Huge Steve Uhlig}{\Large Queen Mary University of London}
+\confpin{\Huge Markus Miettinen}{\Large TU Darmstadt}
+\confpin{\Huge Weixiong Rao}{\Large Tongji University}
+\confpin{\Huge Jiangfeng Li}{\Large Tongji University}
+\confpin{\Huge Jing Wang}{\Large Tongji University}
+\confpin{\Huge Xichen Wang}{\Large Tsinghua University}
+\confpin{\Huge Jingtao Ding}{\Large Tsinghua University}
+\confpin{\Huge Zhen Tu}{\Large Tsinghua University}
+\confpin{\Huge Fengli Xu}{\Large Tsinghua University}
+\confpin{\Huge Yong Li}{\Large Tsinghua University}
+\confpin{\Huge Lieguang Zeng}{\Large Tsinghua University}
+\confpin{\Huge Depeng Jin}{\Large Tsinghua University}
+\confpin{\Huge Aaron Yi Ding}{\Large TU Munich}
+\confpin{\Huge Liang Wang}{\Large University of Cambridge}
+\confpin{\Huge Eiko Yoneki}{\Large University of Cambridge}
+\confpin{\Huge Ashwin Rao}{\Large University of Helsinki}
+\confpin{\Huge Sasu Tarkoma}{\Large University of Helsinki}
+\confpin{\Huge Eemil Lagerspetz}{\Large University of Helsinki}
+\confpin{\Huge Jussi Kangasharju}{\Large University of Helsinki}
+\confpin{\Huge Valtteri Niemi}{\Large University of Helsinki}
+\confpin{\Huge Markku Kojo}{\Large University of Helsinki}
 \confpin{\Huge Ilpo J{\"a}rvinen}{\Large University of Helsinki}
 \confpin{\Huge Seppo H{\"a}t{\"o}nen}{\Large University of Helsinki}
 \confpin{\Huge Lirim Osmani}{\Large University of Helsinki}
 \confpin{\Huge Juhani Toivonen}{\Large University of Helsinki}
 \confpin{\Huge Huber Flores}{\Large University of Oulu}
+\confpin{\Huge Nitinder Mohan}{\Large University of Helsinki}
+\confpin{\Huge Mohsin Khan}{\Large University of Helsinki}
+\fi
+\confpin{\Huge Gizem Akman}{\Large University of Helsinki}
 \end{document}
