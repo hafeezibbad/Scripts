@@ -5,6 +5,9 @@ import time
 import sys
 import getopt
 
+# Usage: 
+# ./mothyhall_verification.py -i <number of iteration> -d <number of doors>
+# ./mothyhall_verification.py --iter=<number of iteration> --door=<number of doors>
 
 # Test script for monty hall.
 def montyhall(n):
