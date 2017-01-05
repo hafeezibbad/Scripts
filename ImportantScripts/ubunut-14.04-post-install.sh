@@ -11,14 +11,14 @@ sudo apt-get -y dist-upgrade
 sudo apt-get -y install dconf-editor nitrogen synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras bleachbit flashplugin-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-restricted-extras xbmc cheese filezilla chromium-browser vim ufw tree inkscape gparted gimp shutter remmina putty remmina-plugin-* clamav byobu tcpdump gparted htop traceroute mtr netcat socat htop traceroute mtr netcat socat iftop tshark iperf nmap tcputils cryptsetup lynis rkhunter chkrootkit multitail rdiff-backup duplicity nethogs iotop nethogs iotop screen tmux apt-file inxi makepasswd iptraf curl hddtemp dtrx python-pip build-essential python-dev aptitude git ethtool mtr-tiny pv grc mosh aria2 htop hping3
 sudo apt-get install xpad
 sudo apt-get -y install python-virtualenv
-sudo apt-get -y install python-mathplotlib
+sudo apt-get -y install python-matplotlib
 sudo apt-get install git
 sudo pip install Glances
 sudo pip install PySensors
 # Install oracle Java 8
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
-sudo apt-get install oracle-java8-installer
+sudo apt-get install oracle-java7-installer
 # Play encrypted DVD in Ubuntu 14.04
 sudo apt-get -y install libdvdread4
 sudo /usr/share/doc/libdvdread4/install-css.sh
