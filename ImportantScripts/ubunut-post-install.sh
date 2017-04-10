@@ -12,6 +12,7 @@ sudo apt-get -y install dconf-editor nitrogen synaptic vlc gimp gimp-data gimp-p
 sudo apt-get install xpad
 sudo apt-get -y install python-virtualenv python-setuptools python-dev build-essential python-matplotlib
 sudo pip install --upgrade virtualenv
+sudo apt-get install -y python-pip
 sudo apt-get -y install git
 sudo pip -y install Glances
 sudo pip -y install PySensors
