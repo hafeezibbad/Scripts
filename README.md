@@ -1,25 +1,37 @@
 ## Setting up development environment using Virtual Machine environment
-This guide is written for setting up development environment for Keymanager (and runtime) development using a virtual machine setup such that the dependencies are installed in virtual machine and Pycharm IDE is setup in host machine.
-In this guide, both host and virtual machine are running Ubuntu 16.04.2 ()
+This guide is written for setting up development environment for Keymanager (and runtime) development using a virtual machine  (vm) setup.
+The code repositories will be shared between Host and VM via NFS sharing. The dependencies will be installed in VM and Pycharm IDE will be setup in host machine to do development work. 
 
 - For more in depth information check README.FIRST.md
+- In this guide, both host and VM are running Ubuntu 16.04.2 (Xenial Xerus)
 
 Download and install Virtualbox [link](https://www.virtualbox.org/wiki/Linux_Downloads) on host machine
-Setup a virtual machine (vm) for Ubuntu 16.04 [image_source](http://releases.ubuntu.com/16.04/) 
-- Preferable hardware specifications Memory >= 3072MB, HDD >= 20GB
+Setup a VM running Ubuntu 16.04 [source](http://releases.ubuntu.com/16.04/).
+- Recommended hardware specifications for VM: Memory >= 3072MB, HDD >= 20GB
 - Setup the networking in Bridged Adapter mode (virtualbox-manager -> vm -> settings -> Network -> Attached to (change to Bridged Adapter))
 
 ### Clone the repositories on Host Machine
 ```sh
+sudo apt-get update
 sudo apt-get install -y git
-mkdir projects
-cd projects
+mkdir shared
+cd shared
 git clone https://gitlab.ssh.com/ukm/keymanager.git
 git clone https://gitlab.ssh.com/ukm/runtime.git
 ```
 
 ### Setup NFS sharing on host machine
 Install NFS-Server on localmachine 
+```sh 
+sudo apt-get update
+sudo apt-get install nfs-kernel-server
+```
+Export the paths (to be shared) from host machine
+```sh
+sudo vi /etc/exports
+```
+Add following lines to /etc/exports (Please replace <username> and <ip> with respective information)
+
 
 
 ### Compile runtime
