@@ -11,7 +11,7 @@ export ZSH="/home/hafeez/.oh-my-zsh"
 #####
 # If there are any issues with the font, make sure that you have selected Meslo font chosen in shell preferences
 #####
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -176,3 +176,5 @@ source $ZSH/oh-my-zsh.sh
 alias activate='source venv/bin/activate'
 alias ls='ls --color=tty'
 alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
