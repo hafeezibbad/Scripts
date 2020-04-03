@@ -17,6 +17,10 @@ sudo service apport stop
 # Install python and related dependencies
 sudo apt -y install python3-setuptools python3-dev python3-venv build-essential python-matplotlib python3-pip
 
+# Install python libraries needed for development
+# install python libraries
+sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+
 # Major Upgrades
 sudo apt-get -y dist-upgrade
 
