@@ -11,7 +11,7 @@ export ZSH="/home/hafeez/.oh-my-zsh"
 #####
 # If there are any issues with the font, make sure that you have selected Meslo font chosen in shell preferences
 #####
-ZSH_THEME="powerlevel10k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
